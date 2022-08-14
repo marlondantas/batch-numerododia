@@ -45,6 +45,6 @@ console.log("Cron Iniciado!")
 console.log(process.env.CRON_PATCH_PAGE);
 
 cron.schedule(process.env.CRON_PATCH_PAGE, () => {
-  console.log("Executando a tarefa a cada 1 minuto");
+  console.log("Executando a tarefa Cron");
   patchTitleNotionPage(process.env.PAGE_ID_FROM_UPDATE, bodyPageToPatch, options);
 });
